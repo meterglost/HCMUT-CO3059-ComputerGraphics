@@ -53,6 +53,7 @@
 
 				"cmake.sourceDirectory": [
 					"${workspaceFolder}/lab-camera/",
+					"${workspaceFolder}/lab-light/",
 				],
 
 				"files.associations": {

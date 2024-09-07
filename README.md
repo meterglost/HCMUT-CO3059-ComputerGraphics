@@ -11,3 +11,9 @@
 - Learn about orthographic and perspective projection
 - Setup keyboard handler to control camera
 - Handle multi-viewport cases
+
+
+## [Lab light](lab-light)
+
+- Learn how to setup light and material
+- Understand how light and material color mixing
