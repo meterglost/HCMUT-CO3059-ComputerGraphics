@@ -28,3 +28,9 @@
 ## [Lab transformation](lab-transformation)
 
 - Learn about object transformation in 2D and 3D spaces
+
+
+## [Lab 1](lab-1)
+
+- Draw 2D objects: square, triangle ...
+- Draw 3D objects: cube, polygon ...
