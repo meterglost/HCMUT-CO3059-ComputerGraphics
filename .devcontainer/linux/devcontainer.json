@@ -44,6 +44,7 @@
 					"${workspaceFolder}/lab-mesh/",
 					"${workspaceFolder}/lab-transformation/",
 					"${workspaceFolder}/lab-1/",
+					"${workspaceFolder}/lab-2/",
 				],
 
 				"files.associations": {

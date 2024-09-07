@@ -34,3 +34,9 @@
 
 - Draw 2D objects: square, triangle ...
 - Draw 3D objects: cube, polygon ...
+
+
+## [Lab 2](lab-2)
+
+- Inherit and refine the base class from previous lab
+- Create and draw some objects: cube, cylinder, sphere, ...
