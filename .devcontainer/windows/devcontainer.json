@@ -1,0 +1,73 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
+{
+	"name": "Docker desktop on Windows",
+	"build": {
+		// Sets the run context to one level up instead of the .devcontainer folder.
+		"context": "../../",
+		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
+		"dockerfile": "../../Dockerfile.dev"
+	},
+
+	// Windows WSL2 has native support X11, so we can mount the X11 socket into the container to run GUI applications.
+	"runArgs": [
+		"--volume=/run/desktop/mnt/host/wslg/.X11-unix:/tmp/.X11-unix",
+		"--volume=/run/desktop/mnt/host/wslg/:/mnt/wslg/",
+
+		"--env=DISPLAY=:0",
+		"--env=WAYLAND_DISPLAY=wayland-0",
+		"--env=XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir",
+		"--env=PULSE_SERVER=/mnt/wslg/PulseServer",
+
+		"--env=LIBGL_ALWAYS_SOFTWARE=1" // Needed for software rendering of opengl
+	],
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Uncomment the next line to run commands after the container is created.
+	// "postCreateCommand": "cat /etc/os-release",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools",
+				"ms-vscode.cmake-tools"
+			],
+			"settings": {
+				"cmake.configureOnOpen": true,
+				"cmake.options.advanced": {
+					"ctest": {
+						"statusBarVisibility": "hidden",
+						"projectStatusVisibility": "hidden"
+					},
+					"debug": {
+						"statusBarVisibility": "hidden",
+						"projectStatusVisibility": "hidden"
+					},
+				},
+
+				"cmake.sourceDirectory": [
+				],
+
+				"files.associations": {
+					"*.h": "c",
+					"*.c": "c",
+					"*.hpp": "cpp",
+					"*.cpp": "cpp",
+					"/usr/include/**": "c",
+					"/usr/include/c++/**": "cpp",
+				},
+
+				"editor.formatOnSave": true
+			}
+		}
+	}
+
+	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "devcontainer"
+}

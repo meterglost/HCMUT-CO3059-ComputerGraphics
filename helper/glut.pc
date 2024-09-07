@@ -1,0 +1,11 @@
+prefix=/usr
+libdir=${prefix}/lib/x86_64-linux-gnu
+includedir=${prefix}/include
+
+Name: glut
+Description: OpenGL Utility Toolkit
+Version:
+Requires: gl glu
+Requires.private:
+Libs: -L${libdir} -lglut
+Cflags: -I${includedir}
