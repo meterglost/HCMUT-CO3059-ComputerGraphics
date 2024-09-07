@@ -48,3 +48,9 @@
 - Control slider using f/b keys
 - Control camera using up/down/left/right keys
 - Modify the base class and draw methods to colorize using lights and materials
+
+
+## [Final project](final-project)
+
+- Modify previous lab to draw multi-way rails
+- Draw ground with repeated pattern
