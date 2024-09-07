@@ -58,6 +58,7 @@
 					"${workspaceFolder}/lab-transformation/",
 					"${workspaceFolder}/lab-1/",
 					"${workspaceFolder}/lab-2/",
+					"${workspaceFolder}/lab-3/",
 				],
 
 				"files.associations": {

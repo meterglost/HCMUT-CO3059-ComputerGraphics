@@ -40,3 +40,11 @@
 
 - Inherit and refine the base class from previous lab
 - Create and draw some objects: cube, cylinder, sphere, ...
+
+
+## [Lab 3 + 4 + 5](lab-3)
+
+- Draw a dual-axis slider
+- Control slider using f/b keys
+- Control camera using up/down/left/right keys
+- Modify the base class and draw methods to colorize using lights and materials
