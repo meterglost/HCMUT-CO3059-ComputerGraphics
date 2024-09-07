@@ -17,3 +17,9 @@
 
 - Learn how to setup light and material
 - Understand how light and material color mixing
+
+
+## [Lab mesh](lab-mesh)
+
+- Implement base class for creating and drawing objects
+- Create and draw some objects: cube, cone, hollow cube, ...
