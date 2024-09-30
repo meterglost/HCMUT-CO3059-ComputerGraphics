@@ -42,6 +42,7 @@
 			"settings": {
 				"cmake.configureOnOpen": false,
 
+				"cmake.pinnedCommands": [], // https://github.com/microsoft/vscode-cmake-tools/issues/3977
 				"cmake.options.advanced": {
 					"ctest": {
 						"statusBarVisibility": "hidden",
