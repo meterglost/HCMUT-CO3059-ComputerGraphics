@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{
+			"name": "Lab Camera",
+			"path": "./lab-camera/"
+		},
+		{
+			"name": "Lab Light",
+			"path": "./lab-light/"
+		},
+		{
+			"name": "Lab Mesh",
+			"path": "./lab-mesh/"
+		},
+		{
+			"name": "Lab Transformation",
+			"path": "./lab-transformation/"
+		},
+		{
+			"name": "Lab 1",
+			"path": "./lab-1/"
+		},
+		{
+			"name": "Lab 2",
+			"path": "./lab-2/"
+		},
+		{
+			"name": "Lab 3 + 4 + 5",
+			"path": "./lab-3/"
+		},
+		{
+			"name": "Final Project",
+			"path": "./final-project/"
+		}
+	]
+}

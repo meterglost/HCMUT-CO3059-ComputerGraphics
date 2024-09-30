@@ -6,7 +6,7 @@
 		// Sets the run context to one level up instead of the .devcontainer folder.
 		"context": "../../",
 		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
-		"dockerfile": "../../Dockerfile.dev"
+		"dockerfile": "../Dockerfile"
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
@@ -23,10 +23,12 @@
 		"vscode": {
 			"extensions": [
 				"ms-vscode.cpptools",
-				"ms-vscode.cmake-tools"
+				"ms-vscode.cmake-tools",
+				"esbenp.prettier-vscode"
 			],
 			"settings": {
-				"cmake.configureOnOpen": true,
+				"cmake.configureOnOpen": false,
+
 				"cmake.options.advanced": {
 					"ctest": {
 						"statusBarVisibility": "hidden",
@@ -35,19 +37,8 @@
 					"debug": {
 						"statusBarVisibility": "hidden",
 						"projectStatusVisibility": "hidden"
-					},
+					}
 				},
-
-				"cmake.sourceDirectory": [
-					"${workspaceFolder}/lab-camera/",
-					"${workspaceFolder}/lab-light/",
-					"${workspaceFolder}/lab-mesh/",
-					"${workspaceFolder}/lab-transformation/",
-					"${workspaceFolder}/lab-1/",
-					"${workspaceFolder}/lab-2/",
-					"${workspaceFolder}/lab-3/",
-					"${workspaceFolder}/final-project/",
-				],
 
 				"files.associations": {
 					"*.h": "c",
@@ -55,10 +46,18 @@
 					"*.hpp": "cpp",
 					"*.cpp": "cpp",
 					"/usr/include/**": "c",
-					"/usr/include/c++/**": "cpp",
+					"/usr/include/c++/**": "cpp"
 				},
 
-				"editor.formatOnSave": true
+				"[c][cpp]": {
+					"editor.defaultFormatter": "ms-vscode.cpptools",
+					"editor.formatOnSave": true
+				},
+
+				"[markdown][yaml][json][jsonc]": {
+					"editor.defaultFormatter": "esbenp.prettier-vscode",
+					"editor.formatOnSave": true
+				}
 			}
 		}
 	}
